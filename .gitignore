@@ -1,0 +1,20 @@
+# Upstream working checkout and generated builds
+/gedit/
+/install/
+/deps/
+/dependency-rpms/
+__pycache__/
+*.log
+
+# User settings, launcher backups, and local test drafts
+/preferences-*.ini
+/installed-paths.txt
+/launcher-backups/
+/test-data*/
+/test-run-*/
+/name-search-*.json
+/dist/
+/assets/gedit-plus-v*.png
+
+/local-rpm/
+/packages/

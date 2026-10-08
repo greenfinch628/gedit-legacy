@@ -1,0 +1,38 @@
+# gedit+
+
+An unofficial customization of gedit 50.0 that preserves untitled documents when closing windows or quitting. This is a local development project, not an official GNOME or gedit release. Source and source-complete packages are published under GPL-3.0-or-later.
+
+## Features
+
+- Restore untitled text, tab order, cursor positions, active tabs, and multiple windows after an orderly close, including across reboot.
+- Keep normal Save/Discard/Cancel confirmation for modified named files. Cancel leaves the window and tabs open.
+- Keep a document open and report an error if its draft cannot be stored.
+- Remove the stored draft after successfully saving it as a named file.
+- Keep normal confirmation when explicitly closing an individual untitled tab.
+- Enable or disable draft preservation under Preferences → Editor.
+- Show the tab bar for a single document; omit the document title from the header bar.
+- Use a custom notepad icon with a blue plus and the launcher name **gedit+**.
+
+Drafts are written on orderly window close or Quit; this is not continuous autosave or crash recovery. Existing drafts can still restore when preservation is disabled. Draft text is stored locally, unencrypted, under `$XDG_DATA_HOME/gedit/drafts-v1` (normally `~/.local/share/gedit/drafts-v1`), with private directory and file permissions.
+
+## Build and try
+
+See [BUILDING.md](BUILDING.md) for dependencies. From this directory:
+
+```sh
+./build.sh
+./run-tests.sh
+python3 install-user.py
+```
+
+The installer installs per-user launchers and icons. It preserves existing gedit preferences and retains the stock system binary. This development build shares gedit's application ID, settings, and desktop entry, so it replaces the normal gedit launcher for the current user. Do not treat it as an independent side-by-side package. The single-tab display preference was enabled for the original local installation; other installations can select “Always” in the existing tab-bar preference.
+
+Run `python3 rollback-user.py` to restore previous launchers; drafts and preferences remain. Build outputs, local preferences, draft fixtures, logs, and launcher backups are excluded from Git.
+
+## Source and licensing
+
+The repository contains a patch against a pinned upstream release, build/test/install scripts, and artwork. `build.sh` checks the source revision and refuses incompatible changes. See [UPSTREAM.md](UPSTREAM.md) and [NOTICE](NOTICE).
+
+The combined customization is distributed under **GPL-3.0-or-later**; see [LICENSE](LICENSE). Original upstream files retain their own copyright and license notices. Additional license texts are in `LICENSES/`. Redistribution of binaries must include compliant access to the complete corresponding source, including the pinned libgd source and build scripts.
+
+See [PACKAGING.md](PACKAGING.md) for Fedora RPM and Ubuntu 26.04 DEB installation and rebuild instructions. macOS builds remain unverified.

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gedit+
+Comment=Unofficial gedit with persistent untitled drafts
+Exec=gedit-plus %U
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=org.gnome.gedit-drafts
+Categories=GNOME;GTK;Utility;TextEditor;
+MimeType=text/plain;
+DBusActivatable=false

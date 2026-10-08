@@ -1,0 +1,17 @@
+Tool: built-in image_gen.imagegen
+Edit target: upstream gedit 50.0 data/icons/org.gnome.gedit-256x256.png
+transparent_background: true
+
+Use case: precise-object-edit. Edit target: the supplied gedit application icon. Make exactly one tiny change: add a single small blue plus sign (+) on the top-left corner of the white notepad paper, below the spiral binding, centered approximately at x=48,y=59 in the original 256x256 coordinates; plus size about 18x18 pixels, stroke thickness about 4px, vivid blue #3584e4. Preserve the original notepad, pencil, spiral rings, scribbled writing, perspective, lighting, colors, shadows, silhouette and overall composition as faithfully as possible. The plus is a clean standalone blue cross with no badge, circle, square, extra marks or text. Keep genuine transparent background and the same square framing. Exactly one blue plus.
+
+Selected revision, approved by the user:
+Tool: built-in image_gen.imagegen
+Edit target: assets/gedit-plus-master.png (first version)
+transparent_background: true
+
+Use case: precise-object-edit. Edit target: this gedit notepad-and-pencil app icon with one blue plus. Change ONLY the blue plus sign. Remove it from its current position near the upper-left corner. Enlarge that SAME blue plus by exactly 75% in both width and height (1.75 times the current dimensions, about 88x88 pixels on the 1254x1254 input), proportionally scaling its stroke. Place the center of the plus inside the FIRST TOP paragraph of handwritten text, halfway between the top and bottom of that paragraph and approximately one-third of the way across the paragraph from its left edge to its right edge (center approximately x=460,y=424 in the 1254x1254 input). It overlays the writing there. Keep only ONE blue plus in the entire icon, same blue #3584e4 and clean cross shape, no badge or surrounding shape. Preserve the notepad, pencil, rings, all handwriting, page shape, perspective, lighting, shadows, framing, and transparent alpha background without changing them. Do not redesign or redraw the rest of the image.
+
+The user explicitly selected the displayed result for installation.
+
+Revision 3, built-in image_gen edit, transparent_background=true:
+Precise-object-edit of the supplied gedit app icon. Change only the single blue plus sign. Make it dramatically larger: its bounding box should occupy nearly the entire TOP-LEFT QUADRANT OF THE WHITE NOTEPAD PAGE, with small margins. The white page is approximately x=130..1060 and y=220..1040 in this 1254px-square image; its upper-left quadrant is approximately x=130..595,y=220..630. Center the plus near x=365,y=435. Make the plus approximately 370 pixels wide and 370 pixels tall with bold proportional stroke thickness about 95 pixels. This is a LARGE BLUE PLUS overlaying the first handwritten paragraph, spanning most of that imaginary quadrant box. Keep precisely one plus, same vivid blue #3584e4, clean equal-arm cross, subtly rounded corners, no badge or background shape. Remove the previous small plus. Preserve the notepad, pencil, binding rings, handwriting outside the area covered by the plus, perspective, lighting, shadows, framing and transparent background. Do not redraw the rest.

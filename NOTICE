@@ -1,0 +1,9 @@
+gedit+ is an unofficial customization based on gedit 50.0.
+Original gedit copyright and contributor credits remain in the upstream source and About dialog. gedit is maintained by the gedit team; this project does not imply their endorsement.
+
+The combined customization uses GPL-3.0-or-later. Upstream GPL-2.0-or-later and LGPL-3.0-or-later notices remain applicable to their respective files. See LICENSE and LICENSES/.
+
+The custom notepad artwork derives from the upstream gedit icon and was edited with an AI image editing tool to add a blue plus. It is not claimed as entirely original artwork. The upstream gedit 50.0 README licenses the project under GPL-2.0-or-later; the derived artwork is supplied under GPL-3.0-or-later, with upstream attribution retained.
+
+Local customization and packaging scripts: gedit+ contributors, 2026.
+Maintainer: Bob Czys <greenfinch628@users.noreply.github.com>.

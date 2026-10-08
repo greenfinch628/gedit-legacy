@@ -1,0 +1,6 @@
+#!/bin/sh
+export GSETTINGS_SCHEMA_DIR=/opt/gedit-plus/share/glib-2.0/schemas
+export XDG_DATA_DIRS="/opt/gedit-plus/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+export LD_LIBRARY_PATH="/opt/gedit-plus/lib:/opt/gedit-plus/lib/gedit${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export GI_TYPELIB_PATH="/opt/gedit-plus/lib/girepository-1.0:/opt/gedit-plus/lib/gedit/girepository-1.0${GI_TYPELIB_PATH:+:$GI_TYPELIB_PATH}"
+exec /opt/gedit-plus/bin/gedit --standalone "$@"
