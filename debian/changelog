@@ -1,3 +1,10 @@
+gedit-plus (50.0-2ubuntu26.04.1) resolute; urgency=medium
+
+  * Default to File Browser and expose the sidebar view selector.
+  * Expand and collapse folders in place on double-click; retain F9 toggle.
+
+ -- Bob Czys <greenfinch628@users.noreply.github.com>  Thu, 08 Oct 2026 16:30:00 -0500
+
 gedit-plus (50.0-1ubuntu26.04.1) resolute; urgency=medium
 
   * First source-complete unofficial gedit+ package.

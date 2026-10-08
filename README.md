@@ -31,6 +31,10 @@ The installer installs per-user launchers and icons. It preserves existing gedit
 
 Run `python3 rollback-user.py` to restore previous launchers; drafts and preferences remain. Build outputs, local preferences, draft fixtures, logs, and launcher backups are excluded from Git.
 
+## Directory browser — release 50.0-2
+
+Press **F9** or use View → Side Panel to show or hide the left sidebar. File Browser is the default view; its selector switches between Documents and File Browser and remembers your selection. Enable File Browser under Preferences → Plugins if it is disabled. Choose a directory using the browser location controls; double-click folders to expand/collapse them and files to open them for editing. The browser provides filters for hidden and binary files.
+
 ## Source and licensing
 
 The repository contains a patch against a pinned upstream release, build/test/install scripts, and artwork. `build.sh` checks the source revision and refuses incompatible changes. See [UPSTREAM.md](UPSTREAM.md) and [NOTICE](NOTICE).
