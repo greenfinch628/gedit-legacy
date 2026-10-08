@@ -29,6 +29,7 @@ build)
   meson compile -C build-gedit
   ;;
 check)
+  cp build-gedit/gedit/org.gnome.gedit.enums.xml build-gedit/data/
   glib-compile-schemas build-gedit/data
   export GSETTINGS_SCHEMA_DIR="$root/build-gedit/data"
   export LD_LIBRARY_PATH="$root/stage-deps/opt/gedit-plus/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
