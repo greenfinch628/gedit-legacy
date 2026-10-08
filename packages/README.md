@@ -1,11 +1,13 @@
 # gedit+ packages
 
-Release 50.0, package revision 1, source commit 61ca9de.
+Release 50.0, package revision 2, source commit bc425dd.
 Packages are locally unsigned, built on Fedora 44 x86_64 and Ubuntu 26.04
 amd64 respectively. Use only the package matching your distribution:
 
-    sudo dnf install ./packages/fedora-44/gedit-plus-50.0-1.fc44.x86_64.rpm
-    sudo apt install ./packages/ubuntu-26.04/gedit-plus_50.0-1ubuntu26.04.1_amd64.deb
+    sudo dnf install ./packages/fedora-44/gedit-plus-50.0-2.fc44.x86_64.rpm
+    sudo apt install ./packages/ubuntu-26.04/gedit-plus_50.0-2ubuntu26.04.1_amd64.deb
+
+This revision defaults to File Browser, exposes the sidebar selector, and expands/collapses folders in place on double-click. F9 toggles the sidebar.
 
 Launch with `gedit-plus`. Packages install under /opt/gedit-plus and provide a
 separate desktop entry, using standalone mode. Preferences and draft storage

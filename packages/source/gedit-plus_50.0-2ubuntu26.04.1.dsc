@@ -2,7 +2,7 @@ Format: 3.0 (quilt)
 Source: gedit-plus
 Binary: gedit-plus
 Architecture: amd64
-Version: 50.0-1ubuntu26.04.1
+Version: 50.0-2ubuntu26.04.1
 Maintainer: Bob Czys <greenfinch628@users.noreply.github.com>
 Homepage: https://github.com/greenfinch628/gedit-
 Standards-Version: 4.7.2
@@ -10,11 +10,11 @@ Build-Depends: debhelper-compat (= 13), meson, ninja-build, pkgconf, gcc, gettex
 Package-List:
  gedit-plus deb editors optional arch=amd64
 Checksums-Sha1:
- 36b7534b0001ee7a5eb40cd7b5a65cb6cb083dc3 15132534 gedit-plus_50.0.orig.tar.gz
- db51c601c9af441785b9bb27655115c1aeef02b3 1632 gedit-plus_50.0-1ubuntu26.04.1.debian.tar.xz
+ 148570f11b26bbc437c17f6e314d198d234c5db4 15134883 gedit-plus_50.0.orig.tar.gz
+ 5eef3b0fa464207caea1d35a2c69929172ad49ba 1724 gedit-plus_50.0-2ubuntu26.04.1.debian.tar.xz
 Checksums-Sha256:
- 2a55f171b5616d7cae958e7369e4bd1f1bdc442d2c7273f927bfdfa0ac06b5fe 15132534 gedit-plus_50.0.orig.tar.gz
- f536b448f1f52c728d54fdaf1311cffa363a2aa7b2cdd30a0ece3d05621a8208 1632 gedit-plus_50.0-1ubuntu26.04.1.debian.tar.xz
+ 5b6d55184afa535ee6d77b5fb5457af23bf0c5a71fdb6628ed91cf7e5d3c472d 15134883 gedit-plus_50.0.orig.tar.gz
+ 35736044bba5e6f1898a0db1aa8face59428f0bb9de9bac7f89d9df909c60ae8 1724 gedit-plus_50.0-2ubuntu26.04.1.debian.tar.xz
 Files:
- caabe832aeec29a29e38422357ffde2f 15132534 gedit-plus_50.0.orig.tar.gz
- 0d9968b60edb7edf96b8851276fb5236 1632 gedit-plus_50.0-1ubuntu26.04.1.debian.tar.xz
+ 8e24423ff519fb9db9be46d1d1bf1167 15134883 gedit-plus_50.0.orig.tar.gz
+ 27ce6994da35f864420469b12e6b6ad0 1724 gedit-plus_50.0-2ubuntu26.04.1.debian.tar.xz
