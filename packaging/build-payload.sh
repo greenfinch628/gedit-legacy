@@ -29,6 +29,8 @@ build)
   meson compile -C build-gedit
   ;;
 check)
+  glib-compile-schemas build-gedit/data
+  export GSETTINGS_SCHEMA_DIR="$root/build-gedit/data"
   export LD_LIBRARY_PATH="$root/stage-deps/opt/gedit-plus/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
   export GI_TYPELIB_PATH="$root/stage-deps/opt/gedit-plus/lib/girepository-1.0${GI_TYPELIB_PATH:+:$GI_TYPELIB_PATH}"
   export GSETTINGS_BACKEND=memory GDK_BACKEND=x11 GTK_A11Y=none
