@@ -4,7 +4,7 @@ Version: 50.0
 Release: 1%{?dist}
 Summary: Unofficial gedit with persistent untitled drafts
 License: GPL-3.0-or-later AND LGPL-3.0-or-later
-URL: https://github.com/greenfinch628/gedit-plus
+URL: https://github.com/greenfinch628/gedit-
 Source0: %{name}-%{version}.tar.gz
 BuildRequires: gcc, meson, ninja-build, gettext, desktop-file-utils, appstream, chrpath
 BuildRequires: pkgconfig(gtk+-3.0), pkgconfig(gio-2.0), pkgconfig(libpeas-gtk-1.0), pkgconfig(gspell-1)

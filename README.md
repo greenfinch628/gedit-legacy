@@ -1,5 +1,7 @@
 # gedit+
 
+![gedit+ showing an untitled document and underlined active tab](assets/screenshots/gedit-plus.png)
+
 An unofficial customization of gedit 50.0 that preserves untitled documents when closing windows or quitting. This is a local development project, not an official GNOME or gedit release. Source and source-complete packages are published under GPL-3.0-or-later.
 
 ## Features
@@ -36,3 +38,10 @@ The repository contains a patch against a pinned upstream release, build/test/in
 The combined customization is distributed under **GPL-3.0-or-later**; see [LICENSE](LICENSE). Original upstream files retain their own copyright and license notices. Additional license texts are in `LICENSES/`. Redistribution of binaries must include compliant access to the complete corresponding source, including the pinned libgd source and build scripts.
 
 See [PACKAGING.md](PACKAGING.md) for Fedora RPM and Ubuntu 26.04 DEB installation and rebuild instructions. macOS builds remain unverified.
+
+## Repositories
+
+Source and packages: [GitHub](https://github.com/greenfinch628/gedit-) and
+[Scopuli Gitea](http://scopuli:3000/scopuli/gedit-).
+The repository slug is `gedit-`; the application and package remain `gedit+`
+and `gedit-plus`, respectively.

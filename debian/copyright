@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: gedit+
-Source: https://github.com/greenfinch628/gedit-plus
+Source: https://github.com/greenfinch628/gedit-
 
 Files: *
 Copyright: Upstream gedit, libgd and Tepl contributors; original notices retained in source.
