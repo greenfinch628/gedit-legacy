@@ -45,3 +45,10 @@ Source and packages: [GitHub](https://github.com/greenfinch628/gedit-) and
 [Scopuli Gitea](http://scopuli:3000/scopuli/gedit-).
 The repository slug is `gedit-`; the application and package remain `gedit+`
 and `gedit-plus`, respectively.
+
+## Binary packages
+
+Fedora 44 RPM and Ubuntu 26.04 DEB packages, checksums, and complete
+corresponding sources are available in [packages/](packages/README.md).
+The packages use `gedit-plus` as their command and a private `/opt/gedit-plus`
+prefix. They still share preferences and draft storage with stock gedit.
