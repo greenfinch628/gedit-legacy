@@ -5,6 +5,16 @@ cd "$root"
 prefix=/opt/gedit-plus
 case ${1:-build} in
 build)
+  meson setup build-sourceview vendor/sourceview --prefix="$prefix" --libdir=lib -Dgtk_doc=false -Dtests=false
+  meson compile -C build-sourceview
+  DESTDIR="$root/stage-deps" meson install -C build-sourceview --no-rebuild
+  mkdir -p build-pc
+  for pc in stage-deps/opt/gedit-plus/lib/pkgconfig/*.pc; do
+    sed "s|^prefix=.*|prefix=$root/stage-deps/opt/gedit-plus|" "$pc" > "build-pc/$(basename "$pc")"
+  done
+  export PKG_CONFIG_PATH="$root/build-pc${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}"
+  export GI_TYPELIB_PATH="$root/stage-deps/opt/gedit-plus/lib/girepository-1.0${GI_TYPELIB_PATH:+:$GI_TYPELIB_PATH}"
+  export LD_LIBRARY_PATH="$root/stage-deps/opt/gedit-plus/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
   meson setup build-tepl vendor/tepl --prefix="$prefix" --libdir=lib -Dgtk_doc=false -Dtests=false
   meson compile -C build-tepl
   DESTDIR="$root/stage-deps" meson install -C build-tepl --no-rebuild
@@ -34,6 +44,7 @@ check)
   ;;
 install)
   dest=$(realpath "$2")
+  DESTDIR="$dest" meson install -C build-sourceview --no-rebuild
   DESTDIR="$dest" meson install -C build-tepl --no-rebuild
   DESTDIR="$dest" meson install -C build-gedit --no-rebuild
   install -Dm755 packaging/gedit-plus "$dest/usr/bin/gedit-plus"

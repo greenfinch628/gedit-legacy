@@ -11,6 +11,6 @@ override_dh_auto_test:
 override_dh_auto_install:
 	packaging/build-payload.sh install debian/gedit-plus
 override_dh_auto_clean:
-	rm -rf build-tepl build-gedit build-pc stage-deps
+	rm -rf build-sourceview build-tepl build-gedit build-pc stage-deps
 override_dh_shlibdeps:
 	dh_shlibdeps -- -ldebian/gedit-plus/opt/gedit-plus/lib -ldebian/gedit-plus/opt/gedit-plus/lib/gedit

@@ -13,8 +13,8 @@ Install the unsigned package for your distribution:
     sudo dnf install ./packages/fedora-44/gedit-plus-50.0-1.fc44.x86_64.rpm
     sudo apt install ./packages/ubuntu-26.04/gedit-plus_50.0-1ubuntu26.04.1_amd64.deb
 
-Only run the command matching your OS. Tepl 6.14 is included privately because
-Ubuntu 26.04's Tepl 6.13 does not meet gedit 50.0's requirement.
+Only run the command matching your OS. Tepl 6.14 and GtkSourceView 299.6 are included privately because
+Ubuntu 26.04's Tepl 6.13 and GtkSourceView 299.5 do not meet the upstream requirements.
 
 ## Rebuild
 
