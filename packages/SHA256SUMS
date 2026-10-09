@@ -1,7 +1,7 @@
-473724b37fc6559a70e18cf1084e49bb6daba93c08ed0a46cfb66ec584aac915  fedora-44/gedit-plus-50.0-2.fc44.x86_64.rpm
-8bddaadced103c7757f06beffb8ba266afc610d13f15a70422b1763f32d13e2b  ubuntu-26.04/gedit-plus_50.0-2ubuntu26.04.1_amd64.deb
-2056ceb5ae9c66f20f2a7cc6b9261148a4656bdfed970cb35b3be914c9c15c61  source/gedit-plus-50.0-2-source.tar.gz
-69647236b1c197aaf588c83ebbd643505f822de4ef8811e33158a3077c8b2873  source/gedit-plus-50.0-2.fc44.src.rpm
-35736044bba5e6f1898a0db1aa8face59428f0bb9de9bac7f89d9df909c60ae8  source/gedit-plus_50.0-2ubuntu26.04.1.debian.tar.xz
-18d65f1bda50393d63998ab3e405eb4c2c57a0cc3b4eac30553cae2cdcd905f3  source/gedit-plus_50.0-2ubuntu26.04.1.dsc
-5b6d55184afa535ee6d77b5fb5457af23bf0c5a71fdb6628ed91cf7e5d3c472d  source/gedit-plus_50.0.orig.tar.gz
+5ae5385cda3388b796bab969cd470f44c6d771d49a13fc03fc601d8c24d1f3f0  fedora-44/gedit-plus-50.0-3.fc44.x86_64.rpm
+b923ef63de61d997c8193b33155f184c34ce1a1b7b268db9d7a057a3b549f06f  source/gedit-plus-50.0-3-source.tar.gz
+d02199f38af20d4b7d5b3ce6e1fca4322dddb2df4779cd788ce78bff8dc8ef69  source/gedit-plus-50.0-3.fc44.src.rpm
+1a516398ce0fe7d86ede6558da6389094fa7431f55521011950c79d0c4f954e6  source/gedit-plus_50.0-3ubuntu26.04.1.debian.tar.xz
+c17ee94905cba205f75100b414b3a9515d562e76d2d2c6bc53e925d5dcb14e4e  source/gedit-plus_50.0-3ubuntu26.04.1.dsc
+062fa8a1997a3a9da8f8e6404c0cd2a3cc321d9e88e015dc3cffbf80c8c3910d  source/gedit-plus_50.0.orig.tar.gz
+694b4017114aee3d67e3159eba3a3cff47d0bbc67969b8c4969a764d5e4c60cd  ubuntu-26.04/gedit-plus_50.0-3ubuntu26.04.1_amd64.deb

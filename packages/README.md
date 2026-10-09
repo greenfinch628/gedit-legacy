@@ -1,13 +1,13 @@
 # gedit+ packages
 
-Release 50.0, package revision 2, source commit bc425dd.
+Release 50.0, package revision 3, source commit 2583485.
 Packages are locally unsigned, built on Fedora 44 x86_64 and Ubuntu 26.04
 amd64 respectively. Use only the package matching your distribution:
 
-    sudo dnf install ./packages/fedora-44/gedit-plus-50.0-2.fc44.x86_64.rpm
-    sudo apt install ./packages/ubuntu-26.04/gedit-plus_50.0-2ubuntu26.04.1_amd64.deb
+    sudo dnf install ./packages/fedora-44/gedit-plus-50.0-3.fc44.x86_64.rpm
+    sudo apt install ./packages/ubuntu-26.04/gedit-plus_50.0-3ubuntu26.04.1_amd64.deb
 
-This revision defaults to File Browser, exposes the sidebar selector, and expands/collapses folders in place on double-click. F9 toggles the sidebar.
+This revision adds Open → Workspace with a directory-only selector. Select replaces the File Browser tree; Cancel preserves it. The sidebar × button hides the panel, F9 reopens it, and double-clicking folders in the browser changes its current directory.
 
 Launch with `gedit-plus`. Packages install under /opt/gedit-plus and provide a
 separate desktop entry, using standalone mode. Preferences and draft storage
@@ -24,6 +24,7 @@ Retain equivalent access to these sources whenever redistributing binaries.
 Validation passed:
 
 - All nine draft-restoration scenarios on Fedora and Ubuntu.
+- Local Workspace selection and cancellation integration checks.
 - Six configured Meson checks on Fedora; two on Ubuntu.
 - Fedora RPM digest check and installation transaction dry run.
 - Extracted Fedora RPM launcher smoke test in an isolated mount namespace.
