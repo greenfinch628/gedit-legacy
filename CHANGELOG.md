@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Add built-in Alt+left-drag rectangular selection with column copy/cut; no plugin is required.
+- Support Ctrl+C/Ctrl+X and context-menu Copy/Cut; enable ordinary Paste when clipboard text and document permissions allow it.
+- Preserve the rectangle when modifier keys are pressed; clear it with Esc or a normal left click.
+- Preserve blank rows and line breaks during column cuts, handle short lines and tabs, and undo the whole cut in one step.
+- Add integration checks for keyboard and menu actions, reverse rectangles, blank and short lines, tabs, Unicode, read-only documents, and undo/redo.
+- Document the feature in the README and dedicated rectangular-selection guide.
+
 ## 50.0-3 — 2026-10-08
 
 - Add Open dropdown → Workspace with a directory-only selector; Select replaces the file-browser tree and Cancel preserves it.

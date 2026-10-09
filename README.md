@@ -2,10 +2,11 @@
 
 ![gedit+ showing an untitled document and underlined active tab](assets/screenshots/gedit-plus.png)
 
-An unofficial customization of gedit 50.0 that preserves untitled documents when closing windows or quitting. This is a local development project, not an official GNOME or gedit release. Source and source-complete packages are published under GPL-3.0-or-later.
+An unofficial customization of gedit 50.0 with built-in rectangular text selection and preservation of untitled documents when closing windows or quitting. This is a local development project, not an official GNOME or gedit release. Source and source-complete packages are published under GPL-3.0-or-later.
 
 ## Features
 
+- Select rectangular blocks with built-in **Alt+drag**, then copy with **Ctrl+C** or cut with **Ctrl+X**. No plugin is required.
 - Restore untitled text, tab order, cursor positions, active tabs, and multiple windows after an orderly close, including across reboot.
 - Keep normal Save/Discard/Cancel confirmation for modified named files. Cancel leaves the window and tabs open.
 - Keep a document open and report an error if its draft cannot be stored.
@@ -30,6 +31,21 @@ python3 install-user.py
 The installer installs per-user launchers and icons. It preserves existing gedit preferences and retains the stock system binary. This development build shares gedit's application ID, settings, and desktop entry, so it replaces the normal gedit launcher for the current user. Do not treat it as an independent side-by-side package. The single-tab display preference was enabled for the original local installation; other installations can select “Always” in the existing tab-bar preference.
 
 Run `python3 rollback-user.py` to restore previous launchers; drafts and preferences remain. Build outputs, local preferences, draft fixtures, logs, and launcher backups are excluded from Git.
+
+## Rectangular selection and column copy/cut
+
+Hold **Alt** and drag with the **left mouse button** across the text to select a rectangle. This feature is built into gedit+; there is no plugin to install or enable.
+
+- **Ctrl+C** copies the selected columns, with one clipboard row per document line.
+- **Ctrl+X** cuts the selected columns while preserving line breaks and blank lines.
+- **Ctrl+Z** undoes the entire column cut in one step.
+- **Esc** or a normal left click clears the rectangle.
+
+You can also right-click the rectangle and choose **Copy** or **Cut**. **Paste** is available when the document is editable and the clipboard contains text. Pressing Ctrl, Alt, or Shift alone preserves the rectangle.
+
+Short lines contribute only the text they contain, and blank lines remain blank. Tabs within the copied columns become spaces according to the configured tab width. Pasting uses ordinary text paste rather than inserting a rectangle across existing lines. Use a monospace font and turn off line wrapping for the clearest view.
+
+See [COLUMN-SELECTION.md](COLUMN-SELECTION.md) for an example and Fedora/Ubuntu desktop shortcut notes.
 
 ## Directory browser — release 50.0-3
 
@@ -56,5 +72,7 @@ and `gedit-plus`, respectively.
 
 Fedora 44 RPM and Ubuntu 26.04 DEB packages, checksums, and complete
 corresponding sources are available in [packages/](packages/README.md).
+The existing 50.0-3 binary packages predate rectangular selection; rebuild from the updated source to include it.
+
 The packages use `gedit-plus` as their command and a private `/opt/gedit-plus`
 prefix. They still share preferences and draft storage with stock gedit.

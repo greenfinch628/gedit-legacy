@@ -29,7 +29,7 @@ find %{buildroot}/opt/gedit-plus -type f -exec chrpath -d {} \; 2>/dev/null || :
 /usr/bin/glib-compile-schemas /opt/gedit-plus/share/glib-2.0/schemas || :
 %files
 %license LICENSE LICENSES NOTICE source/COPYING vendor/tepl/LICENSES vendor/sourceview/LICENSES
-%doc README.md BUILDING.md PACKAGING.md UPSTREAM.md
+%doc README.md COLUMN-SELECTION.md BUILDING.md PACKAGING.md UPSTREAM.md
 /opt/gedit-plus
 %ghost /opt/gedit-plus/share/glib-2.0/schemas/gschemas.compiled
 /usr/bin/gedit-plus
