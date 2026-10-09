@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 Name: gedit-plus
 Version: 50.0
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: Unofficial gedit with persistent untitled drafts
 License: GPL-3.0-or-later AND LGPL-3.0-or-later
 URL: https://github.com/greenfinch628/gedit-
@@ -36,6 +36,9 @@ find %{buildroot}/opt/gedit-plus -type f -exec chrpath -d {} \; 2>/dev/null || :
 /usr/share/applications/gedit-plus.desktop
 /usr/share/icons/hicolor/256x256/apps/org.gnome.gedit-drafts.png
 %changelog
+* Thu Oct 08 2026 Bob Czys <greenfinch628@users.noreply.github.com> - 50.0-3
+- Workspace directory selector and sidebar close button.
+
 * Thu Oct 08 2026 Bob Czys <greenfinch628@users.noreply.github.com> - 50.0-2
 - Default directory browser, visible sidebar selector, and in-place folder expansion.
 

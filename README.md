@@ -31,9 +31,11 @@ The installer installs per-user launchers and icons. It preserves existing gedit
 
 Run `python3 rollback-user.py` to restore previous launchers; drafts and preferences remain. Build outputs, local preferences, draft fixtures, logs, and launcher backups are excluded from Git.
 
-## Directory browser — release 50.0-2
+## Directory browser — release 50.0-3
 
-Press **F9** or use View → Side Panel to show or hide the left sidebar. File Browser is the default view; its selector switches between Documents and File Browser and remembers your selection. Enable File Browser under Preferences → Plugins if it is disabled. Choose a directory using the browser location controls; double-click folders to expand/collapse them and files to open them for editing. The browser provides filters for hidden and binary files.
+Press **F9** or use View → Side Panel to show or hide the left sidebar. The × button at the top right of the sidebar hides it; F9 reopens it. File Browser is the default view; its selector switches between Documents and File Browser and remembers your selection. Enable File Browser under Preferences → Plugins if it is disabled. Choose a directory using the browser location controls; double-click a folder to replace the sidebar view with that folder’s contents, or double-click a file to open it for editing. Use the disclosure arrows to expand or collapse folders without changing the workspace. The browser provides filters for hidden and binary files.
+
+Use **Open ▾ → Workspace** to open a directory-only selector. Single-click a folder and click **Select** to replace the File Browser sidebar with that directory’s file tree. The selector starts at the current workspace (or your home folder). Cancel leaves the workspace unchanged; selecting a folder enables File Browser when needed.
 
 ## Source and licensing
 

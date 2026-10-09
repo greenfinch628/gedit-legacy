@@ -1,5 +1,12 @@
 # Changelog
 
+## 50.0-3 — 2026-10-08
+
+- Add Open dropdown → Workspace with a directory-only selector; Select replaces the file-browser tree and Cancel preserves it.
+- Double-click folders to make their contents the sidebar’s current view.
+
+- Add an accessible × button at the top right of the sidebar to hide it.
+
 ## 50.0-2 — 2026-10-08
 
 - Default to the directory tree, with a visible sidebar selector.

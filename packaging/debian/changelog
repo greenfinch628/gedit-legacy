@@ -1,0 +1,20 @@
+gedit-plus (50.0-3ubuntu26.04.1) resolute; urgency=medium
+
+  * Add Workspace directory selector and sidebar close button.
+  * Selecting a workspace replaces the File Browser directory tree.
+
+ -- Bob Czys <greenfinch628@users.noreply.github.com>  Thu, 08 Oct 2026 18:00:00 -0500
+
+gedit-plus (50.0-2ubuntu26.04.1) resolute; urgency=medium
+
+  * Default to File Browser and expose the sidebar view selector.
+  * Expand and collapse folders in place on double-click; retain F9 toggle.
+
+ -- Bob Czys <greenfinch628@users.noreply.github.com>  Thu, 08 Oct 2026 16:30:00 -0500
+
+gedit-plus (50.0-1ubuntu26.04.1) resolute; urgency=medium
+
+  * First source-complete unofficial gedit+ package.
+  * Include private Tepl 6.14 library required by upstream gedit 50.0.
+
+ -- Bob Czys <greenfinch628@users.noreply.github.com>  Thu, 08 Oct 2026 12:00:00 -0500

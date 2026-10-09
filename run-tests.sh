@@ -23,5 +23,9 @@ for mode in toggle toggle-after-discard; do
   xvfb-run -a "$task_root/gedit/build/gedit/test-drafts" "$mode" > "$test_root/$mode.log" 2>&1
   cat "$test_root/$mode.log"
 done
+export XDG_DATA_HOME="$test_root/workspace"
+mkdir -p "$XDG_DATA_HOME"
+xvfb-run -a "$task_root/gedit/build/gedit/test-drafts" workspace > "$test_root/workspace.log" 2>&1
+cat "$test_root/workspace.log"
 meson test -C "$task_root/gedit/build" --print-errorlogs
 printf 'Test artifacts: %s\n' "$test_root"
