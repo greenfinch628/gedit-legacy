@@ -17,3 +17,7 @@ __pycache__/
 /assets/gedit-plus-v*.png
 
 /local-rpm/
+
+# macOS metadata
+.DS_Store
+._.DS_Store
